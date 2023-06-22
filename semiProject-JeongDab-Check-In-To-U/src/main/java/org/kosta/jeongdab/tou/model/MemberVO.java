@@ -10,13 +10,13 @@ public class MemberVO {
 	private Date memberBirth;
 	private int memberStatus;
 	private String memberAddress;
-	private String memberProfile;
+	private String memberDetailAddress;
 	public MemberVO() {
 		super();
 		
 	}
 	public MemberVO(long memberNo, String memberEmail, String memberName, String password, Date memberBirth,
-			int memberStatus, String memberAddress, String memberProfile) {
+			int memberStatus, String memberAddress, String memberDetailAddress) {
 		super();
 		this.memberNo = memberNo;
 		this.memberEmail = memberEmail;
@@ -25,7 +25,7 @@ public class MemberVO {
 		this.memberBirth = memberBirth;
 		this.memberStatus = memberStatus;
 		this.memberAddress = memberAddress;
-		this.memberProfile = memberProfile;
+		this.memberDetailAddress = memberDetailAddress;
 	}
 	public long getMemberNo() {
 		return memberNo;
@@ -69,17 +69,17 @@ public class MemberVO {
 	public void setMemberAddress(String memberAddress) {
 		this.memberAddress = memberAddress;
 	}
-	public String getMemberProfile() {
-		return memberProfile;
+	public String getMemberDetailAddress() {
+		return memberDetailAddress;
 	}
-	public void setMemberProfile(String memberProfile) {
-		this.memberProfile = memberProfile;
+	public void setMemberDetailAddress(String memberDetailAddress) {
+		this.memberDetailAddress = memberDetailAddress;
 	}
 	@Override
 	public String toString() {
 		return "MemberVO [memberNo=" + memberNo + ", memberEmail=" + memberEmail + ", memberName=" + memberName
 				+ ", password=" + password + ", memberBirth=" + memberBirth + ", memberStatus=" + memberStatus
-				+ ", memberAddress=" + memberAddress + ", memberProfile=" + memberProfile + "]";
+				+ ", memberAddress=" + memberAddress + ", memberDetailAddress=" + memberDetailAddress + "]";
 	}
 	
 }
